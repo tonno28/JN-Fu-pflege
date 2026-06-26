@@ -105,7 +105,10 @@ a:hover { color: var(--gold); }
   transition: border-color .3s, padding .3s, background .3s;
 }
 .nav.is-scrolled { border-bottom-color: var(--line); padding-top: .7rem; padding-bottom: .7rem; }
-.nav__brand { display: flex; flex-direction: column; line-height: 1; margin-right: auto; }
+.nav__brand { display: flex; align-items: center; gap: .7rem; line-height: 1; margin-right: auto; }
+.nav__logo { width: 46px; height: 46px; object-fit: contain; flex-shrink: 0; transition: width .3s, height .3s; }
+.nav.is-scrolled .nav__logo { width: 40px; height: 40px; }
+.nav__brand-text { display: flex; flex-direction: column; }
 .nav__brand-name { font-family: var(--script); font-size: 1.5rem; color: var(--taupe-deep); }
 .nav__brand-sub {
   font-family: var(--sans); text-transform: uppercase;
